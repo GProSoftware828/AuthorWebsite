@@ -1,0 +1,12 @@
+<%= simple_form_for([@book, @book.reviews.build]) do |f| %>
+
+<div id="rating-form">
+	<label>Rating</label>
+	<!-- <%= f.input :rating %> -->
+</div>
+
+	<%= f.input :comment %>
+	<% f.button :submit, :class => "btn-custom2" %>
+<% end %>
+
+<!-- c&p script for raty js corresponding to the above rating-form element -->
